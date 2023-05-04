@@ -10,15 +10,32 @@ export default function Home() {
 
   let handleMouseEnter = () => {
     let arrow = document.querySelector(".arrow-box");
+    arrow.style.scale = 2;
     arrow.style.opacity = 1;
+    arrow.style.transform = "rotate(-10deg)";
   };
+
   let handleMouseLeave = () => {
     let arrow = document.querySelector(".arrow-box");
+    arrow.style.scale = 0;
     arrow.style.opacity = 0;
+    arrow.style.transform = "rotate(0deg)";
   };
-  let handleMouseOver = () => {
-    let arrow = document.querySelector(".arrow-box");
 
+  let handleMouseMove = (e) => {
+    let arrow = document.querySelector(".arrow-box");
+    let x = e.clientX - 48;
+    let y = e.clientY - 48;
+    arrow.style.left = x + "px";
+    arrow.style.top = y + "px";
+  };
+
+  let handleClick = () => {
+    let arrow = document.querySelector(".arrow-box");
+    arrow.style.scale = 2.5;
+    setTimeout(() => {
+      arrow.style.scale = 2;
+    }, 100);
   };
 
   return (
@@ -27,7 +44,18 @@ export default function Home() {
         <title>Space Tourism | Home</title>
       </Head>
       <main id={styles.main}>
-        <div className={styles.body_col} id={styles.into_col}></div>
+        <div className={styles.body_col} id={styles.info_col}>
+          <div className={styles.info_box}>
+            <h2>SO, YOU WANT TO TRAVEL TO</h2>
+            <h1>SPACE</h1>
+            <p>
+              So, you want to travel to Space Let’s face it; if you want to go
+              to space, you might as well genuinely go to outer space and not
+              hover kind of on the edge of it. Well sit back, and relax because
+              we’ll give you a truly out of this world experience! Explore
+            </p>
+          </div>
+        </div>
         <div className={styles.body_col} id={styles.explore_col}>
           <div
             onMouseEnter={() => {
@@ -36,7 +64,12 @@ export default function Home() {
             onMouseLeave={() => {
               handleMouseLeave();
             }}
-            onMouseOver={() => {}}
+            onMouseMove={(e) => {
+              handleMouseMove(e);
+            }}
+            onClick={() => {
+              handleClick();
+            }}
             className="explore_btn"
             id={styles.explore_btn}
           >
@@ -44,10 +77,12 @@ export default function Home() {
             <div className="arrow-box" id={styles.arrow_box}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 50 50"
+                width="48"
+                height="48"
                 id="arrow"
               >
-                <path d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"></path>
+                <path fill="none" d="M0 0h48v48H0z"></path>
+                <path d="m24 8-2.83 2.83L32.34 22H8v4h24.34L21.17 37.17 24 40l16-16z"></path>
               </svg>
             </div>
           </div>
