@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: url("../../public/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        background-image: url("../../public/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+      }
+      
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        background-image: url("../../public/background-home-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: center center;
+      }
+}
