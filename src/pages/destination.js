@@ -3,8 +3,8 @@ import styles from "@/styles/Destination.module.css";
 import { useState } from "react";
 
 const Destination = () => {
-  const [moonActive, setMoonActive] = useState(false);
-  const [marsActive, setMarsActive] = useState(true);
+  const [moonActive, setMoonActive] = useState(true);
+  const [marsActive, setMarsActive] = useState(false);
   const [europaActive, setEuropaActive] = useState(false);
   const [titanActive, setTitanActive] = useState(false);
 
