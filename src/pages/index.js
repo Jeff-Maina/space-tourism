@@ -45,16 +45,10 @@ export default function Home() {
         <title>Space Tourism | Home</title>
       </Head>
       <main id={styles.main}>
-        <m.div
-          className={styles.body_col}
-          id={styles.info_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
+        <div className={styles.body_col} id={styles.info_col}>
           <div className={styles.info_box}>
             <h2>SO, YOU WANT TO TRAVEL TO</h2>
-            <div style={{overflow: "hidden"}}>
+            <div style={{ overflow: "hidden" }}>
               <h1>SPACE</h1>
             </div>
             <p>
@@ -64,14 +58,8 @@ export default function Home() {
               we’ll give you a truly out of this world experience! Explore
             </p>
           </div>
-        </m.div>
-        <m.div
-          className={styles.body_col}
-          id={styles.explore_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
+        </div>
+        <div className={styles.body_col} id={styles.explore_col}>
           <div
             onMouseEnter={() => {
               handleMouseEnter();
@@ -101,7 +89,7 @@ export default function Home() {
               </svg>
             </div>
           </div>
-        </m.div>
+        </div>
       </main>
     </>
   );

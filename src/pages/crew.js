@@ -43,12 +43,9 @@ const Crew = () => {
         id={member1 === true ? styles.layer_active : styles.layer_inactive}
         className={styles.section}
       >
-        <m.div
+        <div
           className={styles.section_col}
           id={styles.info_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div id={styles.title}>
             <h1>01</h1>
@@ -87,13 +84,10 @@ const Crew = () => {
               }}
             ></div>
           </div>
-        </m.div>
+        </div>
         <div className={styles.section_col} id={styles.img_col}>
-          <m.img
+          <img
             src="./crew/image-anousheh-ansari.webp"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
           />
         </div>
       </section>
@@ -101,7 +95,7 @@ const Crew = () => {
         id={member2 === true ? styles.layer_active : styles.layer_inactive}
         className={styles.section}
       >
-        <m.div
+        <div
           className={styles.section_col}
           id={styles.info_col}
           initial={{ opacity: 0 }}
@@ -144,13 +138,10 @@ const Crew = () => {
               }}
             ></div>
           </div>
-        </m.div>
+        </div>
         <div className={styles.section_col} id={styles.img_col}>
-          <m.img
+          <img
             src="./crew/image-douglas-hurley.webp"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
           />
         </div>
       </section>
@@ -158,12 +149,9 @@ const Crew = () => {
         id={member3 === true ? styles.layer_active : styles.layer_inactive}
         className={styles.section}
       >
-        <m.div
+        <div
           className={styles.section_col}
           id={styles.info_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div id={styles.title}>
             <h1>03</h1>
@@ -202,13 +190,10 @@ const Crew = () => {
               }}
             ></div>
           </div>
-        </m.div>
+        </div>
         <div className={styles.section_col} id={styles.img_col}>
-          <m.img
+          <img
             src="./crew/image-victor-glover.webp"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
           />
         </div>
       </section>
@@ -216,13 +201,9 @@ const Crew = () => {
         id={member4 === true ? styles.layer_active : styles.layer_inactive}
         className={styles.section}
       >
-        <m.div
+        <div
           className={styles.section_col}
           id={styles.info_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.title}>
             <h1>04</h1>
@@ -261,13 +242,10 @@ const Crew = () => {
               }}
             ></div>
           </div>
-        </m.div>
+        </div>
         <div className={styles.section_col} id={styles.img_col}>
-          <m.img
+          <img
             src="./crew/image-mark-shuttleworth.webp"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
           />
         </div>
       </section>

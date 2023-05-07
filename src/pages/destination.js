@@ -51,20 +51,13 @@ const Destination = () => {
               <h1>01</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <m.img
-              src="./image-mars.png"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+            <img
             />
           </div>
         </div>
-        <m.div
+        <div
           id={styles.info_col}
           className={styles.dest_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{duration: 0.6, ease: "easeOut"}}
         >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
@@ -117,7 +110,7 @@ const Destination = () => {
               </div>
             </div>
           </div>
-        </m.div>
+        </div>
       </section>
       <section
         className={
@@ -131,20 +124,14 @@ const Destination = () => {
               <h1>00</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <m.img
+            <img
               src="./image-moon.png"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
             />
           </div>
         </div>
-        <m.div
+        <div
           id={styles.info_col}
           className={styles.dest_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
@@ -197,7 +184,7 @@ const Destination = () => {
               </div>
             </div>
           </div>
-        </m.div>
+        </div>
       </section>
       <section
         className={
@@ -211,20 +198,14 @@ const Destination = () => {
               <h1>02</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <m.img
+            <img
               src="./image-europa.webp"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
             />
           </div>
         </div>
-        <m.div
+        <div
           id={styles.info_col}
           className={styles.dest_col}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
@@ -277,7 +258,7 @@ const Destination = () => {
               </div>
             </div>
           </div>
-        </m.div>
+        </div>
       </section>
       <section
         className={
@@ -291,20 +272,14 @@ const Destination = () => {
               <h1>03</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <m.img
+            <img
               src="./image-titan.webp"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
             />
           </div>
         </div>
-        <m.div id={styles.info_col} className={styles.dest_col}>
-          <m.div
+        <div id={styles.info_col} className={styles.dest_col}>
+          <div
             id={styles.info_box}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div id={styles.info_header}>
               <span
@@ -355,8 +330,8 @@ const Destination = () => {
                 <h1>7 years</h1>
               </div>
             </div>
-          </m.div>
-        </m.div>
+          </div>
+        </div>
       </section>
     </>
   );
