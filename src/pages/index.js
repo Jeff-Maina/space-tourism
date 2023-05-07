@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { motion as m } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,10 +45,19 @@ export default function Home() {
         <title>Space Tourism | Home</title>
       </Head>
       <main id={styles.main}>
-        <div className={styles.body_col} id={styles.info_col}>
+        <m.div
+          className={styles.body_col}
+          id={styles.info_col}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+        >
           <div className={styles.info_box}>
             <h2>SO, YOU WANT TO TRAVEL TO</h2>
-            <h1>SPACE</h1>
+            <div style={{overflow: "hidden"}}>
+              <h1>SPACE</h1>
+            </div>
             <p>
               So, you want to travel to Space Let’s face it; if you want to go
               to space, you might as well genuinely go to outer space and not
@@ -55,8 +65,15 @@ export default function Home() {
               we’ll give you a truly out of this world experience! Explore
             </p>
           </div>
-        </div>
-        <div className={styles.body_col} id={styles.explore_col}>
+        </m.div>
+        <m.div
+          className={styles.body_col}
+          id={styles.explore_col}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+        >
           <div
             onMouseEnter={() => {
               handleMouseEnter();
@@ -86,7 +103,7 @@ export default function Home() {
               </svg>
             </div>
           </div>
-        </div>
+        </m.div>
       </main>
     </>
   );

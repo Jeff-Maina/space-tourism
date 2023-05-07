@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   background-color: #000;
-  background-image: url("../../public/background-home-desktop.jpg");
+  background-image: url("../../public/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -116,7 +116,7 @@
   #main {
     flex-direction: column;
     background-color: #000;
-    background-image: url("../../public/background-home-tablet.jpg");
+    background-image: url("../../public/home/background-home-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -162,7 +162,7 @@
   #main {
     flex-direction: column;
     background-color: #000;
-    background-image: url("../../public/background-home-mobile.jpg");
+    background-image: url("../../public/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

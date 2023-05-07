@@ -80,7 +80,7 @@ const Navbar = () => {
             <h4>02</h4>
             <h5>CREW</h5>
           </Link>
-          <Link
+          {/* <Link
             onClick={(e) => {
               handleNavBarIndicator(e);
             }}
@@ -89,7 +89,7 @@ const Navbar = () => {
           >
             <h4>03</h4>
             <h5>TECHNOLOGY</h5>
-          </Link>
+          </Link> */}
         </div>
         <div onClick={()=>{
           setMenuActive(!isMenuActive);

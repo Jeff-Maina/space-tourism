@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/Destination.module.css";
 import { useState } from "react";
+import { motion as m } from "framer-motion";
 
 const Destination = () => {
   const [moonActive, setMoonActive] = useState(true);
@@ -50,10 +51,23 @@ const Destination = () => {
               <h1>01</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <img src="./image-mars.png" />
+            <m.img
+              src="./image-mars.png"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              exit={{ opacity: 0 }}
+            />
           </div>
         </div>
-        <div id={styles.info_col} className={styles.dest_col}>
+        <m.div
+          id={styles.info_col}
+          className={styles.dest_col}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{duration: 0.6, ease: "easeOut"}}
+          exit={{ opacity: 0 }}
+        >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
               <span
@@ -105,7 +119,7 @@ const Destination = () => {
               </div>
             </div>
           </div>
-        </div>
+        </m.div>
       </section>
       <section
         className={
@@ -119,10 +133,23 @@ const Destination = () => {
               <h1>00</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <img src="./image-moon.png" />
+            <m.img
+              src="./image-moon.png"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              exit={{ opacity: 0 }}
+            />
           </div>
         </div>
-        <div id={styles.info_col} className={styles.dest_col}>
+        <m.div
+          id={styles.info_col}
+          className={styles.dest_col}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+        >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
               <span
@@ -174,7 +201,7 @@ const Destination = () => {
               </div>
             </div>
           </div>
-        </div>
+        </m.div>
       </section>
       <section
         className={
@@ -188,10 +215,23 @@ const Destination = () => {
               <h1>02</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <img src="./image-europa.webp" />
+            <m.img
+              src="./image-europa.webp"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              exit={{ opacity: 0 }}
+            />
           </div>
         </div>
-        <div id={styles.info_col} className={styles.dest_col}>
+        <m.div
+          id={styles.info_col}
+          className={styles.dest_col}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+        >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
               <span
@@ -243,7 +283,7 @@ const Destination = () => {
               </div>
             </div>
           </div>
-        </div>
+        </m.div>
       </section>
       <section
         className={
@@ -257,11 +297,23 @@ const Destination = () => {
               <h1>03</h1>
               <h2>PICK YOUR DESTINATION</h2>
             </span>
-            <img src="./image-titan.webp" />
+            <m.img
+              src="./image-titan.webp"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              exit={{ opacity: 0 }}
+            />
           </div>
         </div>
-        <div id={styles.info_col} className={styles.dest_col}>
-          <div id={styles.info_box}>
+        <m.div id={styles.info_col} className={styles.dest_col}>
+          <m.div
+            id={styles.info_box}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+          >
             <div id={styles.info_header}>
               <span
                 onClick={() => {
@@ -311,8 +363,8 @@ const Destination = () => {
                 <h1>7 years</h1>
               </div>
             </div>
-          </div>
-        </div>
+          </m.div>
+        </m.div>
       </section>
     </>
   );

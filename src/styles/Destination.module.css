@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  background-image: url("../../public/background-destination-desktop.jpg");
+  background-image: url("../../public/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -193,7 +193,7 @@
     margin: 0;
     padding: 0;
     background-color: #000;
-    background-image: url("../../public/background-destination-tablet.jpg");
+    background-image: url("../../public/destination/background-destination-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -219,7 +219,7 @@
     margin: 0;
     padding: 0;
     background-color: #000;
-    background-image: url("../../public/background-destination-mobile.jpg");
+    background-image: url("../../public/destination/background-destination-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 200vh;
