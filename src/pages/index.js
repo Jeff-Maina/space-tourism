@@ -51,7 +51,6 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div className={styles.info_box}>
             <h2>SO, YOU WANT TO TRAVEL TO</h2>
@@ -72,7 +71,6 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div
             onMouseEnter={() => {

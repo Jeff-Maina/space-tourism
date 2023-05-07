@@ -49,7 +49,6 @@ const Crew = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.title}>
             <h1>01</h1>
@@ -95,7 +94,6 @@ const Crew = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            exit={{ opacity: 0 }}
           />
         </div>
       </section>
@@ -109,7 +107,6 @@ const Crew = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.title}>
             <h1>02</h1>
@@ -154,7 +151,6 @@ const Crew = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            exit={{ opacity: 0 }}
           />
         </div>
       </section>
@@ -168,7 +164,6 @@ const Crew = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.title}>
             <h1>03</h1>
@@ -214,7 +209,6 @@ const Crew = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            exit={{ opacity: 0 }}
           />
         </div>
       </section>
@@ -274,7 +268,6 @@ const Crew = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            exit={{ opacity: 0 }}
           />
         </div>
       </section>

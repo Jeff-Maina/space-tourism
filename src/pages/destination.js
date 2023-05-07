@@ -56,7 +56,6 @@ const Destination = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              exit={{ opacity: 0 }}
             />
           </div>
         </div>
@@ -66,7 +65,6 @@ const Destination = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{duration: 0.6, ease: "easeOut"}}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
@@ -138,7 +136,6 @@ const Destination = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              exit={{ opacity: 0 }}
             />
           </div>
         </div>
@@ -148,7 +145,6 @@ const Destination = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
@@ -220,7 +216,6 @@ const Destination = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              exit={{ opacity: 0 }}
             />
           </div>
         </div>
@@ -230,7 +225,6 @@ const Destination = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
         >
           <div id={styles.info_box}>
             <div id={styles.info_header}>
@@ -302,7 +296,6 @@ const Destination = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              exit={{ opacity: 0 }}
             />
           </div>
         </div>
@@ -312,7 +305,6 @@ const Destination = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            exit={{ opacity: 0 }}
           >
             <div id={styles.info_header}>
               <span
