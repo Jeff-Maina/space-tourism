@@ -52,7 +52,7 @@ const Destination = () => {
               <h2>PICK YOUR DESTINATION</h2>
             </span>
             <img
-            />
+     src="./image-mars.png"            />
           </div>
         </div>
         <div
